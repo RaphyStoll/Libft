@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction pour exécuter les tests de `ft_strncmp`
 void test_strncmp(const char *s1, const char *s2, size_t n, int expected, int test_num, const char *test_name, int *passed_tests)

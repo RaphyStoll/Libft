@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction pour exécuter les tests de `ft_strlen`
 void test_strlen(const char *s, size_t expected, int test_num, const char *test_name, int *passed_tests)

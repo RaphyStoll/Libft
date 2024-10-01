@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction pour exécuter les tests de `ft_strrchr`
 void test_strrchr(const char *s, int c, const char *expected, int test_num, const char *test_name, int *passed_tests)

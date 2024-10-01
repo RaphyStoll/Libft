@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction pour exécuter les tests de `ft_tolower`
 void test_tolower(int c, int expected, int test_num, const char *test_name, int *passed_tests)

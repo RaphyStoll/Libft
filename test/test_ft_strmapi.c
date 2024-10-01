@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction de transformation pour les tests
 char test_transform(unsigned int i, char c)

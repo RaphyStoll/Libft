@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "../src/libft.h"
 
 // Fonction pour exécuter les tests de `ft_strnstr`
 void test_strnstr(const char *haystack, const char *needle, size_t len, const char *expected, int test_num, const char *test_name, int *passed_tests)
