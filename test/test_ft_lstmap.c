@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour transformer une chaîne en majuscule
 void *to_upper(void *content)

@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_putnbr_fd`
 void test_putnbr_fd(int n, int test_num, const char *test_name, int *passed_tests)

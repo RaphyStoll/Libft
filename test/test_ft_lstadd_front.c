@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour exécuter les tests de `ft_lstadd_front`
 void test_lstadd_front(t_list **lst, t_list *new, t_list *expected_first, int test_num, const char *test_name, int *passed_tests)

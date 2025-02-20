@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour exécuter les tests de `ft_lstsize`
 void test_lstsize(t_list *lst, int expected_size, int test_num, const char *test_name, int *passed_tests)

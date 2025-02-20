@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_memchr`
 void test_memchr(const void *s, int c, size_t n, const void *expected, int test_num, const char *test_name, int *passed_tests)

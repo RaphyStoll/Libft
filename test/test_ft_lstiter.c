@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour transformer chaque élément de la liste en majuscule
 void to_upper(void *content)

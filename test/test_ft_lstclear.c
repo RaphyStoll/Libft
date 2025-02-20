@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction de suppression pour `ft_lstclear`
 void del(void *content)

@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_strlcat`
 void test_strlcat(char *dst, const char *src, size_t dstsize, size_t expected_len, const char *expected_str, int test_num, const char *test_name, int *passed_tests)

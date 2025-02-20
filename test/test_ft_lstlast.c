@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour exécuter les tests de `ft_lstlast`
 void test_lstlast(t_list *lst, t_list *expected_last, int test_num, const char *test_name, int *passed_tests)

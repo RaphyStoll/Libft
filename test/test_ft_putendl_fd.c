@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_putendl_fd`
 void test_putendl_fd(char *s, int test_num, const char *test_name, int *passed_tests)

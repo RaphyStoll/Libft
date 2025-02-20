@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour afficher les valeurs hexadécimales d'un buffer
 void print_hex(const void *buffer, size_t length)

@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft_bonus.h"
 
 // Fonction pour exécuter les tests de `ft_lstnew`
 void test_lstnew(void *content, int test_num, const char *test_name, int *passed_tests)

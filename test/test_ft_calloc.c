@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_calloc`
 void test_calloc(size_t count, size_t size, int test_num, const char *test_name, int *passed_tests)

@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_memcpy`
 void test_memcpy(void *dest, const void *src, size_t n, const void *expected, int test_num, const char *test_name, int *passed_tests)

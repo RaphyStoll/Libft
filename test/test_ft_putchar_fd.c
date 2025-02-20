@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 // Fonction pour exécuter les tests de `ft_putchar_fd`
 void test_putchar_fd(char c, int test_num, const char *test_name, int *passed_tests)

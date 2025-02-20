@@ -1,4 +1,4 @@
-#include "../src/libft.h"
+#include "../header/libft.h"
 
 
 // Fonction pour exécuter les tests de `ft_atoi`
