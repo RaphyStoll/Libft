@@ -1,5 +1,9 @@
 # Libft
 
+[![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](<https://en.wikipedia.org/wiki/C_(programming_language)>)
+[![Doxygen](https://img.shields.io/badge/Doxygen-2C4AA8?logo=doxygen&logoColor=white)](https://www.doxygen.nl/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=githubpages&logoColor=white)](https://raphystoll.github.io/Libft/)
+
 Libft is a custom C library developed for the 42 curriculum. It provides a clean set of
 standard-like helpers for strings, memory, files, and linked lists.
 
@@ -38,6 +42,8 @@ make docs
 
 The project documentation is generated with Doxygen. The local HTML output is written to
 `docs/html/index.html`.
+
+GitHub Pages: [https://raphystoll.github.io/Libft/](https://raphystoll.github.io/Libft/)
 
 ## Usage
 
