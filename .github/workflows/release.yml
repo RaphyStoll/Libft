@@ -1,0 +1,105 @@
+name: Build and publish release binaries
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-binaries-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Linux binaries
+        run: |
+          make fclean
+          make
+          tar -czf libft-linux-x86_64.tar.gz libft.a libft.so
+
+      - name: Upload Linux release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: libft-linux-x86_64
+          path: libft-linux-x86_64.tar.gz
+
+  build-macos:
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build macOS binaries
+        run: |
+          make fclean
+          make
+          tar -czf libft-macos-arm64.tar.gz libft.a libft.dylib
+
+      - name: Upload macOS release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: libft-macos-arm64
+          path: libft-macos-arm64.tar.gz
+
+  build-macos-intel:
+    runs-on: macos-13
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build macOS Intel binaries
+        run: |
+          make fclean
+          make
+          tar -czf libft-macos-x86_64.tar.gz libft.a libft.dylib
+
+      - name: Upload macOS Intel release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: libft-macos-x86_64
+          path: libft-macos-x86_64.tar.gz
+
+  publish-release:
+    needs:
+      - build-linux
+      - build-macos
+      - build-macos-intel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: libft-linux-x86_64
+          path: artifacts/linux
+
+      - name: Download macOS artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: libft-macos-arm64
+          path: artifacts/macos
+
+      - name: Download macOS Intel artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: libft-macos-x86_64
+          path: artifacts/macos-intel
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/linux/libft-linux-x86_64.tar.gz
+            artifacts/macos/libft-macos-arm64.tar.gz
+            artifacts/macos-intel/libft-macos-x86_64.tar.gz
