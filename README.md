@@ -36,8 +36,8 @@ make docs
 
 ## Documentation
 
-The project documentation is generated with Doxygen. The local HTML output is
-written to `docs/html/index.html`.
+The project documentation is generated with Doxygen. The local HTML output is written to
+`docs/html/index.html`.
 
 ## Usage
 
