@@ -75,10 +75,7 @@ BONUS_FILES =
 
 SRCS		= $(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJS		= $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o))
-
-BONUS_SRCS	= $(addprefix $(SRC_DIR)/, $(BONUS_FILES))
-BONUS_OBJS	= $(addprefix $(OBJ_DIR)/, $(BONUS_FILES:.c=.o))
-DEPS		= $(OBJS:.o=.d) $(BONUS_OBJS:.o=.d)
+DEPS		= $(OBJS:.o=.d)
 
 all: $(STATIC_NAME) $(SHARED_NAME)
 	@if [ -f "$(STATIC_NAME)" ] && [ -f "$(SHARED_NAME)" ]; then \
@@ -109,17 +106,6 @@ $(SHARED_NAME): $(OBJS)
 	fi
 
 shared: $(SHARED_NAME)
-
-bonus: $(OBJS) $(BONUS_OBJS)
-	@printf "$(BLUE)[BUILD] bonus$(RESET)\n"
-	@$(AR) $(STATIC_NAME) $(OBJS) $(BONUS_OBJS)
-	@$(CC) $(SHARED_LDFLAGS) -o $(SHARED_NAME) $(OBJS) $(BONUS_OBJS)
-	@if [ -f "$(STATIC_NAME)" ] && [ -f "$(SHARED_NAME)" ]; then \
-		printf "$(GREEN)[OK] bonus built$(RESET)\n"; \
-	else \
-		printf "$(RED)[FAILED] bonus build$(RESET)\n"; \
-		exit 1; \
-	fi
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	@$(MKDIR) $(dir $@)
@@ -171,4 +157,4 @@ docs:
 
 -include $(DEPS)
 
-.PHONY: all clean fclean re bonus shared docs
+.PHONY: all clean fclean re shared docs

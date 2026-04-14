@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Libft: Main Page</title>
+<title>Libft: Libft</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,53 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Libft Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Libft </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<p>A custom C library built for the 42 curriculum.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+What is included</h1>
+<ul>
+<li>Character classification and conversion helpers</li>
+<li>String and memory utilities</li>
+<li>Dynamic allocation helpers</li>
+<li>File descriptor output helpers</li>
+<li>Singly linked list helpers</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Build</h1>
+<div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><p>Builds both the static and shared libraries:</p>
+<ul>
+<li><span class="tt">libft.a</span></li>
+<li><span class="tt">libft.dylib</span> on macOS</li>
+<li><span class="tt">libft.so</span> on Linux</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Bonus</h1>
+<div class="fragment"><div class="line">make bonus</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Documentation</h1>
+<p>Generate the local Doxygen documentation:</p>
+<div class="fragment"><div class="line">make docs</div>
+</div><!-- fragment --><p>The generated documentation is published on GitHub Pages from the <span class="tt">gh-pages</span> branch after each push to <span class="tt">main</span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+GitHub Pages setup</h1>
+<p>After the workflow runs successfully, enable GitHub Pages in your repository settings and select:</p>
+<ul>
+<li>Source: <span class="tt">Deploy from a branch</span></li>
+<li>Branch: <span class="tt">gh-pages</span></li>
+<li>Folder: <span class="tt">/(root)</span></li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Usage</h1>
+<p>Include the header in your project:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="d6/d7e/libft_8h.html">libft.h</a>&quot;</span></div>
+<div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="d6/d7e/libft_8h.html">libft.h</a></div></div>
+</div><!-- fragment --><p>Then link against the library that fits your target platform. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

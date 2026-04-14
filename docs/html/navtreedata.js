@@ -25,6 +25,12 @@
 var NAVTREE =
 [
   [ "Libft", "index.html", [
+    [ "What is included", "index.html#autotoc_md1", null ],
+    [ "Build", "index.html#autotoc_md2", null ],
+    [ "Bonus", "index.html#autotoc_md3", null ],
+    [ "Documentation", "index.html#autotoc_md4", null ],
+    [ "GitHub Pages setup", "index.html#autotoc_md5", null ],
+    [ "Usage", "index.html#autotoc_md6", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

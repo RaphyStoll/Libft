@@ -5,12 +5,14 @@ PROJECT_BRIEF          = "42 Libft library documentation"
 OUTPUT_DIRECTORY       = docs
 CREATE_SUBDIRS         = YES
 
-INPUT                  = includes src
-FILE_PATTERNS          = *.h \
+INPUT                  = README.md includes src
+FILE_PATTERNS          = *.md \
+                         *.h \
                          *.c
 RECURSIVE              = YES
 EXCLUDE_PATTERNS       = */objects/* \
                          */output/*
+USE_MDFILE_AS_MAINPAGE = README.md
 
 # Parsing and extraction
 OPTIMIZE_OUTPUT_FOR_C  = YES
