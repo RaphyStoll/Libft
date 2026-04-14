@@ -6,16 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:52:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:26:17 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Compare deux zones memoire octet par octet.
-** Retourne la difference entre les deux premiers octets differents.
-*/
+/**
+ * @brief Compares two memory areas byte by byte.
+ *
+ * @param s1 First memory area.
+ * @param s2 Second memory area.
+ * @param n Number of bytes to compare.
+ * @return Negative, zero, or positive difference at first mismatch.
+ */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;

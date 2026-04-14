@@ -6,14 +6,18 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:08:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:28:42 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Applique la fonction f a chaque caractere de la chaine s.
-** L'adresse du caractere est passee pour permettre la modification.
-*/
+/**
+ * @brief Applies a callback to each character of a string in place.
+ *
+ * The callback receives the character index and a pointer to the character.
+ *
+ * @param s String to modify.
+ * @param f Callback applied to each character.
+ */
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;

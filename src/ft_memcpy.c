@@ -6,17 +6,22 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:42:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:26:30 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Implementation standard de memcpy.
-** Copie n octets de src vers dest.
-** Ne gere PAS le chevauchement (overlap) -> voir ft_memmove.
-*/
+/**
+ * @brief Copies bytes from source to destination.
+ *
+ * Behavior is undefined for overlapping regions; use ft_memmove for overlap.
+ *
+ * @param dest Destination memory area.
+ * @param src Source memory area.
+ * @param n Number of bytes to copy.
+ * @return Original @p dest pointer, or NULL when both pointers are NULL.
+ */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;

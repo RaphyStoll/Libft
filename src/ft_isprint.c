@@ -6,17 +6,16 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:35:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:21:55 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Optimisation :
-** Les caracteres imprimables ASCII vont de 32 (' ') a 126 ('~').
-** 1. c - 32     : Decale la plage [32, 126] vers [0, 94].
-** 2. (unsigned) : Si c < 32, le resultat est negatif -> devient geant.
-** 3. < 95       : On verifie si on est dans [0, 94].
-*/
+/**
+ * @brief Checks whether a character is printable in ASCII.
+ *
+ * @param c Character value to test.
+ * @return Non-zero if @p c is in [32, 126], 0 otherwise.
+ */
 int	ft_isprint(int c)
 {
 	return ((unsigned int)(c - 32) < 95);

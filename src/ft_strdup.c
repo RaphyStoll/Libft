@@ -6,16 +6,18 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:01:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:28:31 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Duplique la chaine s.
-** Alloue la memoire necessaire (strlen(s) + 1) et copie s.
-*/
+/**
+ * @brief Duplicates a C string into newly allocated memory.
+ *
+ * @param s Source string.
+ * @return Newly allocated duplicate, or NULL on allocation failure.
+ */
 char	*ft_strdup(const char *s)
 {
 	char	*dup;

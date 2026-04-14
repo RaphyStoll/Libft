@@ -6,17 +6,23 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:00:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:21:21 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Alloue la memoire pour un tableau de nmemb elements de taille size.
-** La memoire est initialisee a 0 (via ft_bzero/ft_memset).
-** Gere le cas d'overflow de la multiplication (nmemb * size).
-*/
+
+/**
+ * @brief Allocates and zero-initializes an array.
+ *
+ * Allocates memory for @p nmemb elements of @p size bytes each and sets all
+ * allocated bytes to zero. Returns NULL on overflow or allocation failure.
+ *
+ * @param nmemb Number of elements.
+ * @param size Size of each element in bytes.
+ * @return Pointer to allocated memory, or NULL on failure.
+ */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;

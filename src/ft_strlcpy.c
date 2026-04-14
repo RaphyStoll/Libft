@@ -6,17 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:45:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:29:05 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Copie src vers dest en garantissant la terminaison NULL.
-** Copie au maximum size - 1 caracteres.
-** Retourne la taille totale de src (pour detection de troncature).
-*/
+/**
+ * @brief Copies a string into a bounded destination buffer.
+ *
+ * @param dest Destination buffer.
+ * @param src Source string.
+ * @param size Size of @p dest buffer.
+ * @return Total length of @p src.
+ */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	src_len;

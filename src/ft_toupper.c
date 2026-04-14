@@ -6,16 +6,16 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:36:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:30:24 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Optimisation (Branchless) :
-** On utilise le resultat de la comparaison (0 ou 1) pour eviter un if.
-** Si c est une minuscule (a-z), on soustrait 32.
-** Sinon, on soustrait 0.
-*/
+/**
+ * @brief Converts a lowercase ASCII letter to uppercase.
+ *
+ * @param c Character value.
+ * @return Uppercase ASCII equivalent when applicable, otherwise unchanged.
+ */
 int	ft_toupper(int c)
 {
 	return (c - 32 * ((unsigned int)(c - 'a') < 26));

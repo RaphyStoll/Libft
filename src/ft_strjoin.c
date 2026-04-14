@@ -6,16 +6,19 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:03:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:28:50 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Alloue et retourne une nouvelle chaine resultant de la concatenation
-** de s1 et s2.
-*/
+/**
+ * @brief Concatenates two strings into a newly allocated string.
+ *
+ * @param s1 First input string.
+ * @param s2 Second input string.
+ * @return Newly allocated concatenation, or NULL on failure.
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*join;

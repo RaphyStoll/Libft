@@ -6,16 +6,19 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:48:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:30:05 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Cherche la derniere occurrence du caractere c dans s.
-** Retourne un pointeur vers le caractere trouve, ou NULL.
-*/
+/**
+ * @brief Finds the last occurrence of a character in a string.
+ *
+ * @param s Input string.
+ * @param c Character to search for.
+ * @return Pointer to the last match, or NULL if not found.
+ */
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

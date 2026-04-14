@@ -6,14 +6,19 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:54:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:21:38 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 11:01:30 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Convertit une chaine de caracteres en entier (int).
-** Gere les espaces initiaux (isspace) et un signe optionnel (+/-).
-*/
+/**
+ * @brief Converts an ASCII string to an int value.
+ *
+ * Skips leading whitespace, parses an optional sign, then accumulates
+ * consecutive decimal digits.
+ *
+ * @param str Input C string.
+ * @return Parsed integer value.
+ */
 int	ft_atoi(const char *str)
 {
 	int		res;

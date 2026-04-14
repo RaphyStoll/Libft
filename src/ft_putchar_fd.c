@@ -6,15 +6,18 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:09:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:27:14 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-/*
-** Ecrit le caractere c sur le descripteur de fichier fd.
-*/
+/**
+ * @brief Writes one character to a file descriptor.
+ *
+ * @param c Character to write.
+ * @param fd Destination file descriptor.
+ */
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

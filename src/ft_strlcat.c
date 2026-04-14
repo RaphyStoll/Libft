@@ -6,17 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:46:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:29:00 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Concatene src a la fin de dest.
-** Garantit la terminaison NUL si size > 0.
-** Retourne la longueur totale qu'aurait eu la chaine (dest_len + src_len).
-*/
+/**
+ * @brief Appends a string to a bounded destination buffer.
+ *
+ * @param dest Destination buffer.
+ * @param src Source string.
+ * @param size Full size of @p dest buffer.
+ * @return Length of the string it tried to create.
+ */
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;

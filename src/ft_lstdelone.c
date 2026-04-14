@@ -6,18 +6,21 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:20:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:24:21 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:36:21 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "../includes/types.h"
 
-/*
-** Libere la memoire de l'element passe en parametre en utilisant
-** la fonction del puis avec free(3).
-** La memoire de next ne doit pas etre liberee.
-*/
+/**
+ * @brief Deletes and frees a single element from a linked list.
+ * This function takes an element from a linked list and a function pointer to a
+ * deletion function, then removes and frees the element.
+ *
+ * @param lst The element to delete and free.
+ * @param del A function pointer to the deletion function.
+ */
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (!lst || !del)

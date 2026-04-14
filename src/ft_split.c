@@ -6,7 +6,7 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:05:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:32:25 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,16 @@ static size_t	ft_count_words(char const *s, char c);
 static void	ft_free_split(char **split, size_t i);
 
 
-/*
-** Alloue et retourne un tableau de chaines de caracteres obtenu en
-** separant s a l'aide du caractere c.
-** Le tableau est termine par NULL.
-*/
+/**
+ * @brief Splits a string into an array of substrings.
+ *
+ * Uses the delimiter @p c to separate words. The returned array is
+ * NULL-terminated.
+ *
+ * @param s Input string.
+ * @param c Delimiter character.
+ * @return Newly allocated NULL-terminated array, or NULL on failure.
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**split;
@@ -34,6 +39,14 @@ char	**ft_split(char const *s, char c)
 	return (ft_fill_split(split, s, c));
 }
 
+/**
+ * @brief Fills the split array with allocated word substrings.
+ *
+ * @param split Destination array.
+ * @param s Input string.
+ * @param c Delimiter character.
+ * @return @p split on success, NULL on allocation failure.
+ */
 static char	**ft_fill_split(char **split, char const *s, char c)
 {
 	size_t	i;
@@ -60,6 +73,13 @@ static char	**ft_fill_split(char **split, char const *s, char c)
 	return (split);
 }
 
+/**
+ * @brief Counts words separated by a delimiter in a string.
+ *
+ * @param s Input string.
+ * @param c Delimiter character.
+ * @return Number of words.
+ */
 static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	count;
@@ -81,6 +101,12 @@ static size_t	ft_count_words(char const *s, char c)
 	return (count);
 }
 
+/**
+ * @brief Frees partially allocated split entries.
+ *
+ * @param split Array of strings.
+ * @param i Number of initialized entries.
+ */
 static void	ft_free_split(char **split, size_t i)
 {
 	while (i > 0)

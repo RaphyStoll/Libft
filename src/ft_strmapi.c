@@ -6,16 +6,19 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:07:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:29:35 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Applique la fonction f a chaque caractere de la chaine s
-** pour creer une nouvelle chaine.
-*/
+/**
+ * @brief Maps a function over a string into a new allocated string.
+ *
+ * @param s Input string.
+ * @param f Mapping callback receiving index and character.
+ * @return Newly allocated mapped string, or NULL on failure.
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;

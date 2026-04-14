@@ -6,16 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:12:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:27:41 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Ecrit l'entier n sur le descripteur de fichier fd.
-** Gere INT_MIN et les nombres negatifs.
-*/
+/**
+ * @brief Writes an integer in decimal format to a file descriptor.
+ *
+ * Handles negative values and the full int range.
+ *
+ * @param n Value to write.
+ * @param fd Destination file descriptor.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

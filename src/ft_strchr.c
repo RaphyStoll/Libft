@@ -6,17 +6,21 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:47:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:28:23 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Cherche la premiere occurrence du caractere c dans s.
-** Retourne un pointeur vers le caractere trouve, ou NULL.
-** Le caractere NUL de fin est considere comme faisant partie de la chaine.
-*/
+/**
+ * @brief Finds the first occurrence of a character in a string.
+ *
+ * The terminating '\\0' is considered part of the string.
+ *
+ * @param s Input string.
+ * @param c Character to search for.
+ * @return Pointer to the first match, or NULL if not found.
+ */
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != (char)c)

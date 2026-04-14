@@ -6,17 +6,16 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:16:29 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 18:30:09 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 11:01:03 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Optimisation Bitwise :
-** 1. (c | 32) : converti en min.
-** 2. - 'a'    : soustraire a a-a = 0.
-** 3. (unsigned): si neg le cast transforme en + de 26
-** 4. < 26     : check si entre 0 et 25 (lettre)
-*/
+/**
+ * @brief Checks whether a character is alphabetic.
+ *
+ * @param c Character value to test.
+ * @return Non-zero if @p c is in [A-Z] or [a-z], 0 otherwise.
+ */
 int	isalpha(int c)
 {
 	return (((unsigned int)(c | 32) - 'a') < 26);

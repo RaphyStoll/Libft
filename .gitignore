@@ -10,6 +10,7 @@
 *.dylib
 *.dll
 *.exe
+*.d
 *.out
 build/
 bin/

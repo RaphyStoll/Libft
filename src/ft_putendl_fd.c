@@ -6,15 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:11:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:27:33 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Ecrit la chaine s suivie d'un retour a la ligne sur fd.
-*/
+/**
+ * @brief Writes a string followed by a newline to a file descriptor.
+ *
+ * Does nothing when @p s is NULL.
+ *
+ * @param s String to write.
+ * @param fd Destination file descriptor.
+ */
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)

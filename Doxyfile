@@ -1,0 +1,50 @@
+# Doxygen configuration for Libft
+
+PROJECT_NAME           = "Libft"
+PROJECT_BRIEF          = "42 Libft library documentation"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+
+INPUT                  = includes src
+FILE_PATTERNS          = *.h \
+                         *.c
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */objects/* \
+                         */output/*
+
+# Parsing and extraction
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+
+# Output formats
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+HTML_OUTPUT            = html
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+
+# Source browsing
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION  = YES
+REFERENCES_RELATION     = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# C language settings
+INPUT_ENCODING         = UTF-8
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES

@@ -6,17 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:02:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:30:14 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Extrait une sous-chaine de s.
-** Commence a l'index start et a pour taille max len.
-** Gere les cas ou start >= strlen(s) (retourne chaine vide).
-*/
+/**
+ * @brief Extracts a substring from a string.
+ *
+ * @param s Source string.
+ * @param start Start index in @p s.
+ * @param len Maximum substring length.
+ * @return Newly allocated substring, or NULL on failure.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;

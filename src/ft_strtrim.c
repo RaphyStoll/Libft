@@ -6,16 +6,19 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:04:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:30:10 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/*
-** Alloue et retourne une copie de s1 sans les caracteres specifies
-** dans set au debut et a la fin.
-*/
+/**
+ * @brief Trims leading and trailing characters from a set.
+ *
+ * @param s1 Source string.
+ * @param set Set of characters to trim.
+ * @return Newly allocated trimmed string, or NULL on failure.
+ */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;

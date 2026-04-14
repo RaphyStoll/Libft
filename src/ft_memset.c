@@ -6,17 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:40:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:27:02 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Implementation standard de memset.
-** Remplit une zone memoire avec un octet donne.
-** Retourne le pointeur d'origine.
-*/
+/**
+ * @brief Fills a memory area with a byte value.
+ *
+ * @param s Pointer to the memory area.
+ * @param c Byte value used for filling.
+ * @param len Number of bytes to set.
+ * @return Original @p s pointer.
+ */
 void	*ft_memset(void *s, int c, size_t len)
 {
 	unsigned char	*ptr;

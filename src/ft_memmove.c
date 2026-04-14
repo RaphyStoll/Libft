@@ -6,18 +6,20 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:43:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:26:49 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Implementation standard de memmove.
-** Gere le chevauchement de memoire (overlap).
-** Si dest est apres src, on copie de la fin vers le debut.
-** Sinon, on copie du debut vers la fin (comme memcpy).
-*/
+/**
+ * @brief Copies bytes between potentially overlapping memory areas.
+ *
+ * @param dst Destination memory area.
+ * @param src Source memory area.
+ * @param len Number of bytes to copy.
+ * @return Original @p dst pointer, or NULL when both pointers are NULL.
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*d;

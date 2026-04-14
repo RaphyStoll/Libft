@@ -6,17 +6,22 @@
 /*   By: raphalme <raphalme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:53:00 by raphalme          #+#    #+#             */
-/*   Updated: 2025/12/29 19:29:59 by raphalme         ###   ########.fr       */
+/*   Updated: 2026/04/14 10:45:22 by raphalme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-/*
-** Cherche la premiere occurrence de needle dans haystack,
-** en ne cherchant pas au-dela de len caracteres.
-** Retourne un pointeur vers le debut de l'occurrence, ou NULL.
-*/
+/**
+ * @brief Finds a substring within a bounded string region.
+ *
+ * Searches @p needle in @p haystack but not beyond @p len bytes.
+ *
+ * @param haystack String to search in.
+ * @param needle Substring to search for.
+ * @param len Maximum number of bytes to inspect in @p haystack.
+ * @return Pointer to first match, or NULL when not found.
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
